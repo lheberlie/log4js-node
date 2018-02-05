@@ -29,6 +29,7 @@
   },
   "scripts": {
     "clean": "find test -type f ! -name '*.json' ! -name '*.js' ! -name '.eslintrc' -delete && rm *.log",
+    "lint": "eslint lib/ test/",
     "prepush": "npm test",
     "commitmsg": "validate-commit-msg",
     "posttest": "npm run clean",
@@ -46,6 +47,7 @@
     "date-format": "^1.2.0",
     "debug": "^3.1.0",
     "semver": "^5.3.0",
+    "stack-trace": "0.0.10",
     "streamroller": "^0.7.0"
   },
   "devDependencies": {
